@@ -1,15 +1,17 @@
 class Student {
   String name;
-  int age;
   double marks;
-  Student(this.name, this.age, this.marks);
+
+  Student({required this.name, required this.marks});
+
   void display() {
     print("Name: $name");
-    print("Age: $age");
     print("Marks: $marks");
   }
 }
+
 void main() {
-  Student s = Student("Rahul", 20, 85.5);
+  Student s = Student(name: "Shreya", marks: 85);
+
   s.display();
 }
